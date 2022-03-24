@@ -1,0 +1,76 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+    <meta charset="utf-8">
+    <title>Roll Dice</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta property="og:image" content="img/meta.jpg">
+    <meta name="twitter:image" content="img/meta.jpg">
+
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+<section id="settings" class="container text-center py-4">
+    <div class="row">
+        <div class="col-12 position-relative">
+            <h1>Roll Dice</h1>
+        </div>
+    </div>
+</section>
+
+<section id="data" class="container">
+    <div class="row">
+        <div class="col-12 mb-2">
+            <div class="text-center">
+                <h6>Number of dice:</h6>
+                <input id="population" class="mb-3" type="text" value="1" style="text-align: center; width: 100px;">
+                <div class="mb-4"><button class="roll-dice">Roll</button></div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="main container">
+    <div class="row text-center">
+        <div class="col-12">
+            <div id="main"></div>
+        </div>
+    </div>
+</section>
+
+<div class="opacity-0" style="height: 0; overflow: hidden;">
+    <div id="die" class="position-relative d-inline-block mb-4" style="width: 150px; height: 150px; padding: 25px;">
+        <div class="dice a" data-roll="1">
+            <div class="side" data-side="1"><i></i></div>
+            <div class="side" data-side="2"><i></i><i></i></div>
+            <div class="side" data-side="3"><i></i><i></i><i></i></div>
+            <div class="side" data-side="4"><i></i><i></i><i></i><i></i></div>
+            <div class="side" data-side="5"><i></i><i></i><i></i><i></i><i></i></div>
+            <div class="side" data-side="6"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+        </div>
+    </div>
+</div>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/main.js"></script>
+
+<script>
+    window.ga = function () {
+        ga.q.push(arguments)
+    };
+    ga.q = [];
+    ga.l = +new Date;
+    ga('create', 'G-LKE652V2VV', 'auto');
+    ga('set', 'anonymizeIp', true);
+    ga('set', 'transport', 'beacon');
+    ga('send', 'pageview')
+</script>
+<script src="https://www.google-analytics.com/analytics.js" async></script>
+</body>
+
+</html>
